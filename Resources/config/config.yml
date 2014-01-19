@@ -1,0 +1,5 @@
+victoire_cms:
+    widgets:
+        sharethis:
+            class: "Victoire\\Widget\\ShareThisBundle\\Entity\\WidgetShareThis"
+            name: sharethis

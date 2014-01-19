@@ -1,0 +1,7 @@
+services:
+    victoire_cms.twig.widget_sharethis_manager:
+        class: Victoire\Widget\ShareThisBundle\Widget\Manager\WidgetShareThisManager
+        arguments: [@service_container]
+
+    widget_sharethis_manager:
+        alias: victoire_cms.twig.widget_sharethis_manager
