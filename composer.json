@@ -1,5 +1,5 @@
 {
-    "name": "victoire/sharethis-bundle",
+    "name": "victoire/sharethis-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms ShareThis widget",
     "keywords": ["cms", "victoire", "ShareThis", "widget"],
