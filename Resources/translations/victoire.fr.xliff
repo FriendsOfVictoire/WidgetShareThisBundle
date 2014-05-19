@@ -14,13 +14,9 @@
         <source>modal.form.widget.type.sharethis.label</source>
         <target>Barre de partage</target>
       </trans-unit>
-      <trans-unit resname="widget.sharethis.new.nocustomisation">
-        <source>widget.sharethis.new.nocustomisation</source>
+      <trans-unit resname="widget.sharethis.nocustomisation">
+        <source>widget.sharethis.nocustomisation</source>
         <target>Il n'y a aucun paramétrage possible pour ce widget. Merci de simplement cliquer sur le bouton de sauvegarde pour créer la barre de partage</target>
-      </trans-unit>
-      <trans-unit resname="widget.sharethis.edit.nocustomisation">
-        <source>widget.sharethis.edit.nocustomisation</source>
-        <target>Il n'y a aucun paramétrage possible pour ce widget.</target>
       </trans-unit>
     </body>
   </file>
