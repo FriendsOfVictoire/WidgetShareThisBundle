@@ -56,6 +56,6 @@ class WidgetShareThisType extends WidgetType
      */
     public function getName()
     {
-        return 'appventus_victoireCoreBundle_widgetsharethistype';
+        return 'appventus_victoirecorebundle_widgetsharethistype';
     }
 }
