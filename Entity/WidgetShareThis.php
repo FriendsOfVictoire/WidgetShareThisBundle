@@ -12,6 +12,5 @@ use Victoire\Bundle\CoreBundle\Entity\Widget;
  */
 class WidgetShareThis extends Widget
 {
-    use \Victoire\Bundle\CoreBundle\Entity\Traits\WidgetTrait;
 
 }
