@@ -22,18 +22,23 @@ class WidgetShareThisType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        //choose form mode
-        if ($this->entity_name === null) {
-            //if no entity is given, we generate the static form
-            $builder
-                        ;
+        $namespace = $options['namespace'];
+        $entityName = $options['entityName'];
 
-        } else {
-            //else, WidgetType class will embed a EntityProxyType for given entity
-            parent::buildForm($builder, $options);
+        if ($entityName !== null) {
+            if ($namespace === null) {
+                throw new \Exception('The namespace is mandatory if the entity_name is given.');
+            }
         }
 
+        //choose form mode
+        if ($entityName === null) {
+            //if no entity is given, we generate the static form
+            $builder;
 
+        }
+
+        parent::buildForm($builder, $options);
     }
 
 
@@ -43,6 +48,8 @@ class WidgetShareThisType extends WidgetType
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
+        parent::setDefaultOptions($resolver);
+
         $resolver->setDefaults(array(
             'data_class'         => 'Victoire\Widget\ShareThisBundle\Entity\WidgetShareThis',
             'widget'             => 'sharethis',
@@ -53,9 +60,11 @@ class WidgetShareThisType extends WidgetType
 
     /**
      * get form name
+     *
+     * @return string The name of the form
      */
     public function getName()
     {
-        return 'appventus_victoirecorebundle_widgetsharethistype';
+        return 'victoire_widget_form_sharethis';
     }
 }

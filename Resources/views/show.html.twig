@@ -1,10 +1,6 @@
-{% block body %}
-
-<div class="vic-widget vic-widget-sharethis" id="widget-{{widget.id}}">
-{% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-
 <div class="clear" id="social-container">
     <span class='st_facebook_hcount' displayText='Facebook'></span>
     <span class='st_twitter_hcount' displayText='Tweet'></span>
@@ -17,8 +13,5 @@
 <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "a51a094c-1fde-4e3f-b367-c9fe69eced98", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
-
 {% endblock content %}
-</div>
 
-{% endblock body %}
