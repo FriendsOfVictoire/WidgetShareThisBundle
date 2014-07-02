@@ -3,6 +3,7 @@ services:
         class: Victoire\Widget\ShareThisBundle\Widget\Manager\WidgetShareThisManager
         arguments: 
             - "@service_container"
+            - "ShareThis"
 
     widget_sharethis_manager:
         alias: victoire_core.twig.widget_sharethis_manager
