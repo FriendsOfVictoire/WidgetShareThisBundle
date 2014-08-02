@@ -1,5 +1,5 @@
 victoire_core:
     widgets:
-        sharethis:
+        ShareThis:
             class: "Victoire\\Widget\\ShareThisBundle\\Entity\\WidgetShareThis"
-            name: sharethis
+            name: ShareThis
