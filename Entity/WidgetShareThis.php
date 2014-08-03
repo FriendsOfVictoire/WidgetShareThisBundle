@@ -7,7 +7,7 @@ use Victoire\Bundle\CoreBundle\Entity\Widget;
 /**
  * WidgetShareThis
  *
- * @ORM\Table("cms_widget_sharethis")
+ * @ORM\Table("vic_widget_sharethis")
  * @ORM\Entity
  */
 class WidgetShareThis extends Widget
