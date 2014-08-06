@@ -1,16 +1,8 @@
 services:
-    victoire_core.twig.widget_sharethis_manager:
-        class: Victoire\Widget\ShareThisBundle\Widget\Manager\WidgetShareThisManager
-        arguments: 
-            - "@service_container"
-            - "ShareThis"
-
-    widget_sharethis_manager:
-        alias: victoire_core.twig.widget_sharethis_manager
-        
-    #alias to the entity
-    victoire.widget.sharethis:
-        class: Victoire\Widget\ShareThisBundle\Entity\WidgetShareThis
+    victoire_core.widget_sharethis_content_resolver:
+        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: ShareThis }
     #alias to the form
     victoire.widget.form.sharethis:
         class: Victoire\Widget\ShareThisBundle\Form\WidgetShareThisType
