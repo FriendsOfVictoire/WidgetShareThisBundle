@@ -2,12 +2,9 @@
 
 namespace Victoire\Widget\ShareThisBundle\Form;
 
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
-
 
 /**
  * WidgetShareThis form type
@@ -17,8 +14,8 @@ class WidgetShareThisType extends WidgetType
 
     /**
      * define form fields
-     * @param FormBuilderInterface $builder
-     * @param array $options
+     * @param FormBuilderInterface $builder
+     * @param array                $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -41,10 +38,9 @@ class WidgetShareThisType extends WidgetType
         parent::buildForm($builder, $options);
     }
 
-
     /**
      * bind form to WidgetShareThis entity
-     * @param OptionsResolverInterface $resolver
+     * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
@@ -56,7 +52,6 @@ class WidgetShareThisType extends WidgetType
             'translation_domain' => 'victoire'
         ));
     }
-
 
     /**
      * get form name
