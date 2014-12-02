@@ -3,6 +3,10 @@ services:
         class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: ShareThis }
+
+    victoire.widget.sharethis:
+        class: Victoire\Widget\ShareThisBundle\Entity\WidgetShareThis
+
     #alias to the form
     victoire.widget.form.sharethis:
         class: Victoire\Widget\ShareThisBundle\Form\WidgetShareThisType
