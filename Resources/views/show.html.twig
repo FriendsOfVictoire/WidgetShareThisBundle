@@ -1,17 +1,18 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-<div class="clear" id="social-container">
-    <span class='st_facebook_hcount' displayText='Facebook'></span>
-    <span class='st_twitter_hcount' displayText='Tweet'></span>
-    <span class='st_plusone_hcount' displayText='Google +1'></span>
-    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
-    <span class='st_viadeo_hcount' displayText='Viadeo'></span>
-    <span class='st_email_hcount' displayText='Email'></span>
+<div class="vic-social-widget-container">
+    {% if facebookEnabled %}<span class='st_facebook_hcount' displayText='Facebook'></span>{% endif %}
+    {% if twitterEnabled %}<span class='st_twitter_hcount' displayText='Tweet'></span>{% endif %}
+    {% if googleplusEnabled %}<span class='st_plusone_hcount' displayText='Google +1'></span>{% endif %}
+    {% if linkedinEnabled %}<span class='st_linkedin_hcount' displayText='LinkedIn'></span>{% endif %}
+    {% if viadeoEnabled %}<span class='st_viadeo_hcount' displayText='Viadeo'></span>{% endif %}
+    {% if pinterestEnabled %}<span class='st_pinterest_hcount' displayText='Viadeo'></span>{% endif %}
+    {% if emailEnabled %}<span class='st_email_hcount' displayText='Email'></span>{% endif %}
+    {% if shareThisEnabled %}<span class='st_sharethis_hcount' displayText='ShareThis'></span>{% endif %}
 </div>
 
 <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "a51a094c-1fde-4e3f-b367-c9fe69eced98", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+<script type="text/javascript">stLight.options({publisher: "{{ shareThisPubKey }}", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
 {% endblock content %}
-

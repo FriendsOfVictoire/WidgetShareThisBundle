@@ -1,6 +1,8 @@
 {% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
 
-{% block body %}
-{{ parent() }}
-<div class="alert alert-warning">{{ 'widget.sharethis.nocustomisation'|trans({}, 'victoire') }}</div>
-{% endblock body %}
+
+{% block form_static %}
+<div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
+    {{ form(form) }}
+</div>
+{% endblock %}

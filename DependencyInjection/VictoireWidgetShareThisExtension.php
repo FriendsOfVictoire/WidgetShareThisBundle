@@ -24,5 +24,9 @@ class VictoireWidgetShareThisExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $container->setParameter(
+            'victoire_sharethis.shareThisPubKey', $config['shareThisPubKey']
+        );
     }
 }

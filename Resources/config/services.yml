@@ -1,6 +1,9 @@
 services:
     victoire_core.widget_sharethis_content_resolver:
-        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        class: Victoire\Widget\ShareThisBundle\Resolver\WidgetShareThisResolver
+        arguments:
+            - "%victoire_sharethis.shareThisPubKey%"
+        parent: victoire_widget.base_widget_content_resolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: ShareThis }
 
