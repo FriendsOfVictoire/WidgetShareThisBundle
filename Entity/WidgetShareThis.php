@@ -13,13 +13,6 @@ use Victoire\Bundle\WidgetBundle\Entity\Widget;
  */
 class WidgetShareThis extends Widget
 {
-    public $shareThisPubKey;
-
-    public function __construct($shareThisPubKey)
-    {
-        $this->shareThisPubKey = $shareThisPubKey;
-    }
-
     /**
      * @var boolean
      *
