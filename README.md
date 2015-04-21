@@ -7,13 +7,14 @@ Get this sharethis bundle and so on
 First you need to have a valid Symfony2 Victoire edition.
 Then you just have to run the following composer command :
 
-    php composer.phar require friendsofvictoire/sharethis-bundle
+    php composer.phar require friendsofvictoire/sharethis-widget
 
 The sharethis bundle handles Bootstrap and Foundation view.
 
 
 Do not forget to add the bundle in your AppKernel !
 
+```php
     class AppKernel extends Kernel
     {
         public function registerBundles()
@@ -26,3 +27,4 @@ Do not forget to add the bundle in your AppKernel !
             return $bundles;
         }
     }
+```
