@@ -9,9 +9,6 @@ Then you just have to run the following composer command :
 
     php composer.phar require friendsofvictoire/sharethis-widget
 
-The sharethis bundle handles Bootstrap and Foundation view.
-
-
 Do not forget to add the bundle in your AppKernel !
 
 ```php
