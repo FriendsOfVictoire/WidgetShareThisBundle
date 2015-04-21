@@ -7,7 +7,7 @@ Get this sharethis bundle and so on
 First you need to have a valid Symfony2 Victoire edition.
 Then you just have to run the following composer command :
 
-    php composer.phar require appventus/sharethis-bundle
+    php composer.phar require friendsofvictoire/sharethis-bundle
 
 The sharethis bundle handles Bootstrap and Foundation view.
 
