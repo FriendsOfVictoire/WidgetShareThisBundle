@@ -3,6 +3,7 @@
 namespace Victoire\Widget\ShareThisBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
@@ -75,6 +76,14 @@ class WidgetShareThis extends Widget
      * @ORM\Column(name="shareThisEnabled", type="boolean")
      */
     private $shareThisEnabled;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="twitterVia", type="string", length=255, nullable=true)
+     * @VIC\ReceiverProperty("textable")
+     */
+    protected $twitterVia;
 
     /**
      * Get id
@@ -301,4 +310,29 @@ class WidgetShareThis extends Widget
     {
         return $this->shareThisEnabled;
     }
+
+    /**
+     * Set twitterVia
+     *
+     * @param string $twitterVia
+     *
+     * @return ShareThis
+     */
+    public function setTwitterVia($twitterVia)
+    {
+        $this->twitterVia = $twitterVia;
+
+        return $this;
+    }
+
+    /**
+     * Get twitterVia
+     *
+     * @return string
+     */
+    public function getTwitterVia()
+    {
+        return $this->twitterVia;
+    }
+
 }
