@@ -21,11 +21,11 @@ class WidgetShareThisType extends WidgetType
     {
         $mode = $options['mode'];
         $namespace = $options['namespace'];
-        $entityName = $options['entityName'];
+        $businessEntityId = $options['businessEntityId'];
 
-        if ($entityName !== null) {
+        if ($businessEntityId !== null) {
             if ($namespace === null) {
-                throw new \Exception('The namespace is mandatory if the entity_name is given.');
+                throw new \Exception('The namespace is mandatory if the entity_id is given.');
             }
         }
 
@@ -57,6 +57,7 @@ class WidgetShareThisType extends WidgetType
             ->add('shareThisEnabled', null, array(
                 'label'    => 'victoire.sharethis.form.shareThisEnabled.label',
                 'required' => false, ))
+            ->add('link', 'victoire_link')
             ;
 
         if ($mode === Widget::MODE_STATIC) {
