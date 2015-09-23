@@ -1,16 +1,23 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
+    {%  set baseUrl = app.request.getSchemeAndHttpHost()  %}
+    {% if link and link.parameters is defined and link.linkType != "none" %}
+        {% set url = baseUrl ~ vic_link_url(link.parameters) %}
+    {% else %}
+        {% set url = baseUrl ~ app.request.requesturi %}
+    {% endif %}
+
 <div class="vic-social-widget-container">
-    {% if facebookEnabled %}<span class='st_facebook_hcount' displayText='Facebook'></span>{% endif %}
-    {% if twitterEnabled %}<span st_via="{% if twitterVia is defined and twitterVia %}{{ twitterVia }}{% endif %}" class='st_twitter_hcount' displayText='Tweet'></span>{% endif %}
-    {% if bufferEnabled %}<span class='st_buffer_hcount' displayText='Buffer'></span>{% endif %}
-    {% if googleplusEnabled %}<span class='st_plusone_hcount' displayText='Google +1'></span>{% endif %}
-    {% if linkedinEnabled %}<span class='st_linkedin_hcount' displayText='LinkedIn'></span>{% endif %}
-    {% if viadeoEnabled %}<span class='st_viadeo_hcount' displayText='Viadeo'></span>{% endif %}
-    {% if pinterestEnabled %}<span class='st_pinterest_hcount' displayText='Viadeo'></span>{% endif %}
-    {% if emailEnabled %}<span class='st_email_hcount' displayText='Email'></span>{% endif %}
-    {% if shareThisEnabled %}<span class='st_sharethis_hcount' displayText='ShareThis'></span>{% endif %}
+    {% if facebookEnabled %}<span st_url="{{ url }}" class='st_facebook_hcount' ></span>{% endif %}
+    {% if twitterEnabled %}<span st_url="{{ url }}" st_via="{% if twitterVia is defined and twitterVia %}{{ twitterVia }}{% endif %}" class='st_twitter_hcount' displayText='Tweet'></span>{% endif %}
+    {% if bufferEnabled %}<span st_url="{{ url }}" class='st_buffer_hcount' displayText='Buffer'></span>{% endif %}
+    {% if googleplusEnabled %}<span st_url="{{ url }}" class='st_plusone_hcount' displayText='Google +1'></span>{% endif %}
+    {% if linkedinEnabled %}<span st_url="{{ url }}" class='st_linkedin_hcount' displayText='LinkedIn'></span>{% endif %}
+    {% if viadeoEnabled %}<span st_url="{{ url }}" class='st_viadeo_hcount' displayText='Viadeo'></span>{% endif %}
+    {% if pinterestEnabled %}<span st_url="{{ url }}" class='st_pinterest_hcount' displayText='Viadeo'></span>{% endif %}
+    {% if emailEnabled %}<span st_url="{{ url }}" class='st_email_hcount' displayText='Email'></span>{% endif %}
+    {% if shareThisEnabled %}<span st_url="{{ url }}" class='st_sharethis_hcount' displayText='ShareThis'></span>{% endif %}
 </div>
 
 <script type="text/javascript">var switchTo5x=true;</script>
