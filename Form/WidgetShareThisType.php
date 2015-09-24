@@ -5,6 +5,7 @@ namespace Victoire\Widget\ShareThisBundle\Form;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
+use Victoire\Bundle\FormBundle\Form\Type\LinkType;
 use Victoire\Bundle\WidgetBundle\Model\Widget;
 
 /**
@@ -57,7 +58,11 @@ class WidgetShareThisType extends WidgetType
             ->add('shareThisEnabled', null, array(
                 'label'    => 'victoire.sharethis.form.shareThisEnabled.label',
                 'required' => false, ))
-            ->add('link', 'victoire_link')
+            ->add('link', 'victoire_link', array(
+                "linkTypeChoices" => array_merge(LinkType::getDefaultLinkTypeChoices(), array(
+                    "none" => "victoire.sharethis.form.linkType.choices.none.label"
+                ))
+            ))
             ;
 
         if ($mode === Widget::MODE_STATIC) {
