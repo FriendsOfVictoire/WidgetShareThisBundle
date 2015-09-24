@@ -54,6 +54,26 @@
         <source>victoire.sharethis.form.shareThisEnabled.label</source>
         <target>ShareThis ?</target>
       </trans-unit>
+      <trans-unit resname="victoire.sharethis.form.linkType.choices.none.label">
+        <source>victoire.sharethis.form.linkType.choices.none.label</source>
+        <target>Page courante</target>
+      </trans-unit>
+      <trans-unit resname="victoire.sharethis.form.fieldset.services.label">
+        <source>victoire.sharethis.form.fieldset.services.label</source>
+        <target>Choisissez les réseaux sociaux qui vont composer votre barre de partage:</target>
+      </trans-unit>
+      <trans-unit resname="victoire.sharethis.form.fieldset.twitter.via.label">
+        <source>victoire.sharethis.form.fieldset.twitter.via.label</source>
+        <target>Ajoutez une mention twitter @</target>
+      </trans-unit>
+      <trans-unit resname="victoire.sharethis.form.fieldset.link.label">
+        <source>victoire.sharethis.form.fieldset.link.label</source>
+        <target>Saisissez le lien, ou choisissez la page que vous souhaitez partager:</target>
+      </trans-unit>
+      <trans-unit resname="victoire.sharethis.form.twitterVia.label">
+        <source>victoire.sharethis.form.twitterVia.label</source>
+        <target>Exemple: victoiredcms pour @victoiredcms</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
