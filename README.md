@@ -1,4 +1,4 @@
-Victoire CMS ShareThis Bundle
+Victoire DCMS ShareThis Bundle
 ============
 
 Need to add a sharethis in a victoire cms website ?

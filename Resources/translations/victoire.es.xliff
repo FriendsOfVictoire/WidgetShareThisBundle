@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -8,15 +8,15 @@
     <body>
       <trans-unit resname="widget.sharethis.shareThisPubKey.empty">
         <source>widget.sharethis.shareThisPubKey.empty</source>
-        <target><![CDATA[<h4 class="vic-h4">Aucune clé n'a été entrée jusqu'à présent.</h4><br/> Un développeur devrait l'ajouter dans la configuration du projet sous le paramètre <strong>victoire_sharethis.shareThisPubKey</strong>.]]></target>
+        <target><![CDATA[<h4 class="vic-h4">No clave se ha introducido hasta el momento.</h4><br/> Un desarrollador debe agregarla a la configuración del proyecto en el parámetro <strong>victoire_sharethis.shareThisPubKey</strong>.]]></target>
       </trans-unit>
       <trans-unit resname="widget.sharethis.new.action.label">
         <source>widget.sharethis.new.action.label</source>
-        <target>Barre de partage</target>
+        <target>Barra redes sociales</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.sharethis.label">
         <source>modal.form.widget.type.sharethis.label</source>
-        <target>Barre de partage</target>
+        <target>Barra redes sociales</target>
       </trans-unit>
       <trans-unit resname="victoire.sharethis.form.facebookEnabled.label">
         <source>victoire.sharethis.form.facebookEnabled.label</source>
@@ -56,23 +56,23 @@
       </trans-unit>
       <trans-unit resname="victoire.sharethis.form.linkType.choices.none.label">
         <source>victoire.sharethis.form.linkType.choices.none.label</source>
-        <target>Page courante</target>
+        <target>Página courante</target>
       </trans-unit>
       <trans-unit resname="victoire.sharethis.form.fieldset.services.label">
         <source>victoire.sharethis.form.fieldset.services.label</source>
-        <target>Choisissez les réseaux sociaux qui vont composer votre barre de partage :</target>
+        <target>Elija las redes sociales que compondrán su barra redes sociales :</target>
       </trans-unit>
       <trans-unit resname="victoire.sharethis.form.fieldset.twitter.via.label">
         <source>victoire.sharethis.form.fieldset.twitter.via.label</source>
-        <target>Ajoutez une mention twitter @</target>
+        <target>Añadir una mención de twitter @</target>
       </trans-unit>
       <trans-unit resname="victoire.sharethis.form.fieldset.link.label">
         <source>victoire.sharethis.form.fieldset.link.label</source>
-        <target>Saisissez le lien, ou choisissez la page que vous souhaitez partager :</target>
+        <target>Introduzca el enlace o seleccione la página que desea compartir :</target>
       </trans-unit>
       <trans-unit resname="victoire.sharethis.form.twitterVia.label">
         <source>victoire.sharethis.form.twitterVia.label</source>
-        <target>Exemple: victoiredcms pour @victoiredcms</target>
+        <target>Ejemplo : victoiredcms para @victoiredcms</target>
       </trans-unit>
     </body>
   </file>
