@@ -7,7 +7,7 @@ use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetShareThis
+ * WidgetShareThis.
  *
  * @ORM\Table("vic_widget_sharethis")
  * @ORM\Entity
@@ -18,63 +18,63 @@ class WidgetShareThis extends Widget
     use \Victoire\Bundle\WidgetBundle\Entity\Traits\LinkTrait;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="facebookEnabled", type="boolean")
      */
     private $facebookEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="twitterEnabled", type="boolean")
      */
     private $twitterEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="googleplusEnabled", type="boolean")
      */
     private $googleplusEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="linkedinEnabled", type="boolean")
      */
     private $linkedinEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="viadeoEnabled", type="boolean")
      */
     private $viadeoEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="emailEnabled", type="boolean")
      */
     private $emailEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="pinterestEnabled", type="boolean")
      */
     private $pinterestEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="bufferEnabled", type="boolean")
      */
     private $bufferEnabled;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="shareThisEnabled", type="boolean")
      */
@@ -89,9 +89,9 @@ class WidgetShareThis extends Widget
     protected $twitterVia;
 
     /**
-     * Get id
+     * Get id.
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -99,9 +99,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set facebookEnabled
+     * Set facebookEnabled.
      *
-     * @param boolean $facebookEnabled
+     * @param bool $facebookEnabled
      *
      * @return ShareThis
      */
@@ -113,9 +113,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get facebookEnabled
+     * Get facebookEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getFacebookEnabled()
     {
@@ -123,9 +123,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set twitterEnabled
+     * Set twitterEnabled.
      *
-     * @param boolean $twitterEnabled
+     * @param bool $twitterEnabled
      *
      * @return ShareThis
      */
@@ -137,9 +137,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get twitterEnabled
+     * Get twitterEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getTwitterEnabled()
     {
@@ -147,9 +147,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set googleplusEnabled
+     * Set googleplusEnabled.
      *
-     * @param boolean $googleplusEnabled
+     * @param bool $googleplusEnabled
      *
      * @return ShareThis
      */
@@ -161,9 +161,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get googleplusEnabled
+     * Get googleplusEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getGoogleplusEnabled()
     {
@@ -171,9 +171,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set linkedinEnabled
+     * Set linkedinEnabled.
      *
-     * @param boolean $linkedinEnabled
+     * @param bool $linkedinEnabled
      *
      * @return ShareThis
      */
@@ -185,9 +185,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get linkedinEnabled
+     * Get linkedinEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getLinkedinEnabled()
     {
@@ -195,9 +195,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set viadeoEnabled
+     * Set viadeoEnabled.
      *
-     * @param boolean $viadeoEnabled
+     * @param bool $viadeoEnabled
      *
      * @return ShareThis
      */
@@ -209,9 +209,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get viadeoEnabled
+     * Get viadeoEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getViadeoEnabled()
     {
@@ -219,9 +219,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set emailEnabled
+     * Set emailEnabled.
      *
-     * @param boolean $emailEnabled
+     * @param bool $emailEnabled
      *
      * @return ShareThis
      */
@@ -233,9 +233,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get emailEnabled
+     * Get emailEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getEmailEnabled()
     {
@@ -243,9 +243,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set pinterestEnabled
+     * Set pinterestEnabled.
      *
-     * @param boolean $pinterestEnabled
+     * @param bool $pinterestEnabled
      *
      * @return ShareThis
      */
@@ -257,9 +257,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get pinterestEnabled
+     * Get pinterestEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getPinterestEnabled()
     {
@@ -267,9 +267,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set bufferEnabled
+     * Set bufferEnabled.
      *
-     * @param boolean $bufferEnabled
+     * @param bool $bufferEnabled
      *
      * @return ShareThis
      */
@@ -281,9 +281,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get bufferEnabled
+     * Get bufferEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getBufferEnabled()
     {
@@ -291,9 +291,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set shareThisEnabled
+     * Set shareThisEnabled.
      *
-     * @param boolean $shareThisEnabled
+     * @param bool $shareThisEnabled
      *
      * @return ShareThis
      */
@@ -305,9 +305,9 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get shareThisEnabled
+     * Get shareThisEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getShareThisEnabled()
     {
@@ -315,7 +315,7 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Set twitterVia
+     * Set twitterVia.
      *
      * @param string $twitterVia
      *
@@ -329,7 +329,7 @@ class WidgetShareThis extends Widget
     }
 
     /**
-     * Get twitterVia
+     * Get twitterVia.
      *
      * @return string
      */
