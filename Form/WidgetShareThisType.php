@@ -62,7 +62,7 @@ class WidgetShareThisType extends WidgetType
             ->add('link', 'victoire_link', [
                 'linkTypeChoices' => array_merge(LinkType::getDefaultLinkTypeChoices(), [
                     'none'        => 'victoire.sharethis.form.linkType.choices.none.label',
-                ])
+                ]),
             ]);
 
         if ($mode === Widget::MODE_STATIC) {

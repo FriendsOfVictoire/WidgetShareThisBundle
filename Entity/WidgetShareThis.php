@@ -14,7 +14,6 @@ use Victoire\Bundle\WidgetBundle\Entity\Widget;
  */
 class WidgetShareThis extends Widget
 {
-
     use \Victoire\Bundle\WidgetBundle\Entity\Traits\LinkTrait;
 
     /**
@@ -337,5 +336,4 @@ class WidgetShareThis extends Widget
     {
         return $this->twitterVia;
     }
-
 }
