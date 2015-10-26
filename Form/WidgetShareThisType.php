@@ -9,12 +9,13 @@ use Victoire\Bundle\FormBundle\Form\Type\LinkType;
 use Victoire\Bundle\WidgetBundle\Model\Widget;
 
 /**
- * WidgetShareThis form type
+ * WidgetShareThis form type.
  */
 class WidgetShareThisType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
      * @param array                $options
      */
@@ -31,68 +32,67 @@ class WidgetShareThisType extends WidgetType
         }
 
         $builder
-            ->add('facebookEnabled', null, array(
+            ->add('facebookEnabled', null, [
                 'label'    => 'victoire.sharethis.form.facebookEnabled.label',
-                'required' => false, ))
-            ->add('twitterEnabled', null, array(
+                'required' => false, ])
+            ->add('twitterEnabled', null, [
                 'label'    => 'victoire.sharethis.form.twitterEnabled.label',
-                'required' => false, ))
-            ->add('googleplusEnabled', null, array(
+                'required' => false, ])
+            ->add('googleplusEnabled', null, [
                 'label'    => 'victoire.sharethis.form.googleplusEnabled.label',
-                'required' => false, ))
-            ->add('linkedinEnabled', null, array(
+                'required' => false, ])
+            ->add('linkedinEnabled', null, [
                 'label'    => 'victoire.sharethis.form.linkedinEnabled.label',
-                'required' => false, ))
-            ->add('viadeoEnabled', null, array(
+                'required' => false, ])
+            ->add('viadeoEnabled', null, [
                 'label'    => 'victoire.sharethis.form.viadeoEnabled.label',
-                'required' => false, ))
-            ->add('emailEnabled', null, array(
+                'required' => false, ])
+            ->add('emailEnabled', null, [
                 'label'    => 'victoire.sharethis.form.emailEnabled.label',
-                'required' => false, ))
-            ->add('pinterestEnabled', null, array(
+                'required' => false, ])
+            ->add('pinterestEnabled', null, [
                 'label'    => 'victoire.sharethis.form.pinterestEnabled.label',
-                'required' => false, ))
-            ->add('bufferEnabled', null, array(
+                'required' => false, ])
+            ->add('bufferEnabled', null, [
                 'label'    => 'victoire.sharethis.form.bufferEnabled.label',
-                'required' => false, ))
-            ->add('shareThisEnabled', null, array(
+                'required' => false, ])
+            ->add('shareThisEnabled', null, [
                 'label'    => 'victoire.sharethis.form.shareThisEnabled.label',
-                'required' => false, ))
-            ->add('link', 'victoire_link', array(
-                "linkTypeChoices" => array_merge(LinkType::getDefaultLinkTypeChoices(), array(
-                    "none" => "victoire.sharethis.form.linkType.choices.none.label"
-                ))
-            ))
-            ;
+                'required' => false, ])
+            ->add('link', 'victoire_link', [
+                'linkTypeChoices' => array_merge(LinkType::getDefaultLinkTypeChoices(), [
+                    'none'        => 'victoire.sharethis.form.linkType.choices.none.label',
+                ]),
+            ]);
 
         if ($mode === Widget::MODE_STATIC) {
             $builder
-                ->add('twitterVia', null, array(
-                    'label' => 'victoire.sharethis.form.twitterVia.label',
-                    'required' => false,))
-            ;
+                ->add('twitterVia', null, [
+                    'label'    => 'victoire.sharethis.form.twitterVia.label',
+                    'required' => false,]);
         }
 
         parent::buildForm($builder, $options);
     }
 
     /**
-     * bind form to WidgetShareThis entity
+     * bind form to WidgetShareThis entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\ShareThisBundle\Entity\WidgetShareThis',
             'widget'             => 'ShareThis',
             'translation_domain' => 'victoire',
-        ));
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The name of the form
      */

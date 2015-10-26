@@ -2,8 +2,8 @@
 
 namespace Victoire\Widget\ShareThisBundle\Resolver;
 
-use Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver;
 use Victoire\Bundle\WidgetBundle\Model\Widget;
+use Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver;
 
 class WidgetShareThisResolver extends BaseWidgetContentResolver
 {
@@ -15,7 +15,7 @@ class WidgetShareThisResolver extends BaseWidgetContentResolver
     }
 
     /**
-     * Get the static content of the widget
+     * Get the static content of the widget.
      *
      * @param Widget $widget
      *
