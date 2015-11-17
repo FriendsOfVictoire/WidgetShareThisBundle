@@ -14,7 +14,11 @@
         {% if linkedinEnabled %}<span st_url="{{ url }}" class='st_linkedin_hcount' displayText='LinkedIn'></span>{% endif %}
         {% if viadeoEnabled %}<span st_url="{{ url }}" class='st_viadeo_hcount' displayText='Viadeo'></span>{% endif %}
         {% if pinterestEnabled %}<span st_url="{{ url }}" class='st_pinterest_hcount' displayText='Viadeo'></span>{% endif %}
-        {% if emailEnabled %}<span st_url="{{ url }}" class='st_email_hcount' displayText='Email'></span>{% endif %}
+        {% if emailEnabled %}
+            <a onclick="javascript:window.location='mailto:?subject=' + document.title + '&body={{ url }}';" href="#" class="stButton">
+                <img src="{{ asset("/bundles/victoirewidgetsharethis/images/email.png") }}">
+            </a>
+        {% endif %}
         {% if shareThisEnabled %}<span st_url="{{ url }}" class='st_sharethis_hcount' displayText='ShareThis'></span>{% endif %}
     </div>
 
