@@ -3,7 +3,7 @@
 namespace Victoire\Widget\ShareThisBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\FormBundle\Form\Type\LinkType;
 use Victoire\Bundle\WidgetBundle\Model\Widget;
@@ -59,7 +59,7 @@ class WidgetShareThisType extends WidgetType
             ->add('shareThisEnabled', null, [
                 'label'    => 'victoire.sharethis.form.shareThisEnabled.label',
                 'required' => false, ])
-            ->add('link', 'victoire_link', [
+            ->add('link', LinkType::class, [
                 'linkTypeChoices' => array_merge(LinkType::getDefaultLinkTypeChoices(), [
                     'none'        => 'victoire.sharethis.form.linkType.choices.none.label',
                 ]),
@@ -76,28 +76,16 @@ class WidgetShareThisType extends WidgetType
     }
 
     /**
-     * bind form to WidgetShareThis entity.
-     *
-     * @param OptionsResolverInterface $resolver
+     * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\ShareThisBundle\Entity\WidgetShareThis',
             'widget'             => 'ShareThis',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string The name of the form
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_sharethis';
     }
 }
