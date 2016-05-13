@@ -69,7 +69,7 @@ class WidgetShareThisType extends WidgetType
             $builder
                 ->add('twitterVia', null, [
                     'label'    => 'victoire.sharethis.form.twitterVia.label',
-                    'required' => false,]);
+                    'required' => false, ]);
         }
 
         parent::buildForm($builder, $options);
