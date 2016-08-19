@@ -2,61 +2,59 @@
 
 {% trans_default_domain "victoire" %}
 {% block form_static %}
-<div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
-    {{ form_start(form) }}
-    <fieldset>
-        <legend>{{ 'victoire.sharethis.form.fieldset.services.label'|trans }}</legend>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.facebookEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.twitterEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.googleplusEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.linkedinEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.viadeoEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.emailEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.pinterestEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.bufferEnabled) }}
-        </span>
-        <span class="victoire-sharethis-form-service-elem">
-            {{ form_row(form.shareThisEnabled) }}
-        </span>
-    </fieldset>
-    {% if form.twitterVia is defined %}
-    <fieldset id="virtoire_widget_{{ widget.id }}_twitter_via" class="vic-hidden">
-        <legend>{{ 'victoire.sharethis.form.fieldset.twitter.via.label'|trans }}</legend>
-        {{ form_row(form.twitterVia) }}
-    </fieldset>
-    <script>
-        toggleTwitterVia();
-        $vic('#static_victoire_widget_form_sharethis_twitterEnabled').on('change', toggleTwitterVia);
-        function toggleTwitterVia()
-        {
-            var checked = $vic('#static_victoire_widget_form_sharethis_twitterEnabled').prop('checked');
-            if (checked){
-                $vic('#virtoire_widget_{{ widget.id }}_twitter_via').removeClass('vic-hidden');
-            }else{
-                $vic('#virtoire_widget_{{ widget.id }}_twitter_via').addClass('vic-hidden');
-            }
+{{ form_start(form) }}
+<fieldset>
+    <legend>{{ 'victoire.sharethis.form.fieldset.services.label'|trans }}</legend>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.facebookEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.twitterEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.googleplusEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.linkedinEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.viadeoEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.emailEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.pinterestEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.bufferEnabled) }}
+    </span>
+    <span class="victoire-sharethis-form-service-elem">
+        {{ form_row(form.shareThisEnabled) }}
+    </span>
+</fieldset>
+{% if form.twitterVia is defined %}
+<fieldset id="virtoire_widget_{{ widget.id }}_twitter_via" class="vic-hidden">
+    <legend>{{ 'victoire.sharethis.form.fieldset.twitter.via.label'|trans }}</legend>
+    {{ form_row(form.twitterVia) }}
+</fieldset>
+<script>
+    toggleTwitterVia();
+    $vic('#static_victoire_widget_form_sharethis_twitterEnabled').on('change', toggleTwitterVia);
+    function toggleTwitterVia()
+    {
+        var checked = $vic('#static_victoire_widget_form_sharethis_twitterEnabled').prop('checked');
+        if (checked){
+            $vic('#virtoire_widget_{{ widget.id }}_twitter_via').removeClass('vic-hidden');
+        }else{
+            $vic('#virtoire_widget_{{ widget.id }}_twitter_via').addClass('vic-hidden');
         }
-    </script>
-    {% endif %}
-    <fieldset class="victoire-widget-sharethis-form-link-fieldset">
-        <legend>{{ 'victoire.sharethis.form.fieldset.link.label'|trans }}</legend>
-        {{ form_widget(form.link) }}
-    </fieldset>
-    {{ form_end(form) }}
-</div>
+    }
+</script>
+{% endif %}
+<fieldset class="victoire-widget-sharethis-form-link-fieldset">
+    <legend>{{ 'victoire.sharethis.form.fieldset.link.label'|trans }}</legend>
+    {{ form_widget(form.link) }}
+</fieldset>
+{{ form_end(form) }}
 {% endblock %}
