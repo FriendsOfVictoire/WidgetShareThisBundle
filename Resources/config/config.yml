@@ -3,3 +3,4 @@ victoire_core:
         ShareThis:
             class: "Victoire\\Widget\\ShareThisBundle\\Entity\\WidgetShareThis"
             name: ShareThis
+            cache: false
