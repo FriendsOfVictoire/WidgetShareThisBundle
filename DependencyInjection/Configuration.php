@@ -20,9 +20,8 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('victoire_widget_share_this');
         $rootNode
-            ->addDefaultsIfNotSet()
             ->children()
-                ->scalarNode('shareThisPubKey')->cannotBeEmpty()->end()
+                ->scalarNode('shareThisPubKey')->defaultValue('%shareThisPubKey%')->end()
             ->end();
 
         return $treeBuilder;
