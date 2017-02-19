@@ -7,7 +7,7 @@ This bundles gives you access to the *ShareThis Widget* which enables a social b
 
 ##Set Up Victoire
 
-If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/2.2/doc/setup.md)*
 
 ##Install the bundle
 
