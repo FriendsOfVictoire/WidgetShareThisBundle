@@ -21,16 +21,6 @@ class WidgetShareThisType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $mode = $options['mode'];
-        $namespace = $options['namespace'];
-        $businessEntityId = $options['businessEntityId'];
-
-        if ($businessEntityId !== null) {
-            if ($namespace === null) {
-                throw new \Exception('The namespace is mandatory if the entity_id is given.');
-            }
-        }
-
         $builder
             ->add('facebookEnabled', null, [
                 'label'    => 'victoire.sharethis.form.facebookEnabled.label',
@@ -65,7 +55,7 @@ class WidgetShareThisType extends WidgetType
                 ]),
             ]);
 
-        if ($mode === Widget::MODE_STATIC) {
+        if ($options['mode'] === Widget::MODE_STATIC) {
             $builder
                 ->add('twitterVia', null, [
                     'label'    => 'victoire.sharethis.form.twitterVia.label',
