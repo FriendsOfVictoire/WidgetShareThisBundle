@@ -6,71 +6,71 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.sharethis.shareThisPubKey.empty">
+      <trans-unit id="1" resname="widget.sharethis.shareThisPubKey.empty">
         <source>widget.sharethis.shareThisPubKey.empty</source>
         <target><![CDATA[<h4 class="vic-h4">No key has been entered so far.</h4><br/> A developer should add it to the project configuration within the following parameter <strong>victoire_sharethis.shareThisPubKey</strong>.]]></target>
       </trans-unit>
-      <trans-unit resname="widget.sharethis.new.action.label">
+      <trans-unit id="2" resname="widget.sharethis.new.action.label">
         <source>widget.sharethis.new.action.label</source>
         <target>Sharing toolbar</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.sharethis.label">
+      <trans-unit id="3" resname="modal.form.widget.type.sharethis.label">
         <source>modal.form.widget.type.sharethis.label</source>
         <target>Sharing toolbar</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.facebookEnabled.label">
+      <trans-unit id="4" resname="victoire.sharethis.form.facebookEnabled.label">
         <source>victoire.sharethis.form.facebookEnabled.label</source>
         <target>Facebook ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.twitterEnabled.label">
+      <trans-unit id="5" resname="victoire.sharethis.form.twitterEnabled.label">
         <source>victoire.sharethis.form.twitterEnabled.label</source>
         <target>Twitter ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.googleplusEnabled.label">
+      <trans-unit id="6" resname="victoire.sharethis.form.googleplusEnabled.label">
         <source>victoire.sharethis.form.googleplusEnabled.label</source>
         <target>Google+ ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.linkedinEnabled.label">
+      <trans-unit id="7" resname="victoire.sharethis.form.linkedinEnabled.label">
         <source>victoire.sharethis.form.linkedinEnabled.label</source>
         <target>LinkedIn ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.viadeoEnabled.label">
+      <trans-unit id="8" resname="victoire.sharethis.form.viadeoEnabled.label">
         <source>victoire.sharethis.form.viadeoEnabled.label</source>
         <target>Viadeo ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.emailEnabled.label">
+      <trans-unit id="9" resname="victoire.sharethis.form.emailEnabled.label">
         <source>victoire.sharethis.form.emailEnabled.label</source>
         <target>Email ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.pinterestEnabled.label">
+      <trans-unit id="10" resname="victoire.sharethis.form.pinterestEnabled.label">
         <source>victoire.sharethis.form.pinterestEnabled.label</source>
         <target>Pinterest ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.bufferEnabled.label">
+      <trans-unit id="11" resname="victoire.sharethis.form.bufferEnabled.label">
         <source>victoire.sharethis.form.bufferEnabled.label</source>
         <target>Buffer ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.shareThisEnabled.label">
+      <trans-unit id="12" resname="victoire.sharethis.form.shareThisEnabled.label">
         <source>victoire.sharethis.form.shareThisEnabled.label</source>
         <target>ShareThis ?</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.linkType.choices.none.label">
+      <trans-unit id="13" resname="victoire.sharethis.form.linkType.choices.none.label">
         <source>victoire.sharethis.form.linkType.choices.none.label</source>
         <target>Active page</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.fieldset.services.label">
+      <trans-unit id="14" resname="victoire.sharethis.form.fieldset.services.label">
         <source>victoire.sharethis.form.fieldset.services.label</source>
         <target>Choose the social networks that will compose your sharing toolbar :</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.fieldset.twitter.via.label">
+      <trans-unit id="15" resname="victoire.sharethis.form.fieldset.twitter.via.label">
         <source>victoire.sharethis.form.fieldset.twitter.via.label</source>
         <target>Add a twitter mention @</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.fieldset.link.label">
+      <trans-unit id="16" resname="victoire.sharethis.form.fieldset.link.label">
         <source>victoire.sharethis.form.fieldset.link.label</source>
         <target>Enter the link, or select the page you want to share :</target>
       </trans-unit>
-      <trans-unit resname="victoire.sharethis.form.twitterVia.label">
+      <trans-unit id="17" resname="victoire.sharethis.form.twitterVia.label">
         <source>victoire.sharethis.form.twitterVia.label</source>
         <target>Example: victoiredcms for @victoiredcms</target>
       </trans-unit>
